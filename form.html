@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form action="">
+    <label for="">Student Name</label>
+    <input type="text" required minlength="4">
+    <br>
+    <br>
+    
+    <label for="">Student email</label>
+    <input type="email">
+    
+    
+    <br>
+    <br>
+
+    <label for="">Date of birth</label>
+    <input type="date">
+    <br>
+    <br>
+    <label for="">Addresss</label>
+    <textarea cols="20" rows="4"></textarea>
+    <br>
+    <br>
+
+     <label for="">Gender</label>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+    
+    <br>
+    <br>
+
+    <label for="">Select course</label>
+    <select>
+        <option >MERN STACK DEVELOPMENT</option>
+        <option >DATA SCIENCE</option>
+        <option >DATA ANALYTICS</option>
+        <option >DEVOPS</option>
+        <option >UI/UX</option>
+    </select>
+    
+    <br>
+    <br>
+
+    <label for="">SELECT COLLEGE</label>
+    <input type="text" list="college">
+    <datalist id="college">
+        <option >srmcem</option>
+        <option >bbd</option>
+        <option >amity</option>
+        <option >bbau</option>
+
+
+    </datalist>
+    <br>
+    <br>
+
+    <input type="checkbox" id="terms">
+    <label for="terms">ACCEPT TERM & CONDITIONS</label>
+    <br><br>
+    <details>
+        <summary>view term and conditions</summary>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, asperiores. Tenetur facilis, est et, asperiores quis voluptatum eveniet itaque pariatur voluptatem delectus culpa sed, dolores perspiciatis dignissimos fuga nihil? Odit?</p>
+    </details>
+    <button type="Submit">submit</button>
+    
+    </form>
+
+</body>
+</html>
