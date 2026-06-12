@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission form</title>
 </head>
+<style>
+    .card{
+        border: 2px solid red;
+        width: 80%;
+        background-color: rgb(233, 214, 224);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(149, 161, 226);
+    }
+    .text{
+        color: solid crimson;
+        border: 1px;
+    }
+
+</style>
 <body>
-    <h1>Student Admission Form</h1>
+    <div class="card">
+    <h1 class="text">Student Admission Form</h1>
     <form action="">
     <label for="">Student Name</label>
     <input type="text" required minlength="4">
@@ -71,6 +93,7 @@
     <button type="Submit">submit</button>
     
     </form>
+    </div>
 
 </body>
 </html>
