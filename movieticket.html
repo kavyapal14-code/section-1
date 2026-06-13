@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking Form</title>
+    <style>
+        body {
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3b63e6;
+            background-image: url("https://img.magnific.com/free-vector/movie-film-strip-blue-background_1017-33458.jpg");
+            
+            background-size: cover;
+        }
+        label{
+            
+            font-size: larger;
+        }
+
+        h1{
+            text-align: center;
+        
+        }
+
+        .card{
+            
+            width: 25%;
+            height: 60%;
+            border-radius: 20px;
+            padding: 20px;
+
+        }
+        button{
+            display: block;
+            height: 30px;
+            width: 130px;
+            margin: 10px auto;
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form-box"></div>
+    
+    <div class="card">
+        <h1 style="color: white;">Movie Ticket Booking</h1>
+        <form action="">
+            <div>
+                <label for="" style="color: white;"">Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+            <br>
+            <div>
+                <label for="" style="color: white;">Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <br>
+            <div>
+                <label for="" style="color: white;">Select Movie</label>
+                <select required>
+                    <option>Choose Movie</option>
+                    <option>DHOOM</option>
+                    <option>PUSHPA</option>
+                    <option>RAONE</option>
+                    <option>KRISH</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="" style="color: white;">Date</label>
+                <input type="date">
+            </div>
+            <br>
+            <div>
+                <label for="" style="color: white;">Time</label>
+                <select required>
+                    <option>10:00AM</option>
+                    <option>01:00PM</option>
+                    <option>02:35PM</option>
+                    <option>05:25PM</option>
+                    <option>08:00PM</option>
+                    <option>10:45PM</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="" style="color: white;">Number of Tickets</label>
+                <input type="number" min="1" max="10">
+            </div>
+
+            <br>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
