@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Plans</title>
+
+<style>
+
+body{
+    background:url("https://static.vecteezy.com/system/resources/previews/014/468/621/non_2x/abstract-digital-technology-background-with-concept-security-vector.jpg");
+    background-size:cover;
+    
+}
+
+.container{
+    text-align:center;
+    
+}
+
+.container h1{
+    color:white;
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+.container p{
+    color:white;
+    margin-bottom:70px;
+}
+
+.programs{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+}
+
+.plan{
+    width:250px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius:8px;
+    border: px solid black;
+    padding:20px;
+    box-shadow: 5px 5px 10px wheat ;
+    box-shadow: 5px 5px 10px wheat ;  
+    
+    transition:0.3s;
+}
+
+.plan h2{
+    margin-bottom:30px;
+}
+
+.price{
+    font-size:50px;
+    font-weight:bold;
+    
+    margin-bottom:20px;
+}
+
+.plan ul{
+    
+    text-align:left;
+    margin:30px;
+}
+
+.btn-submit{
+    width:90%;
+    padding:14px;
+    border-color: #1a49d6;
+    border-radius:10px;
+    background:#1a49d6;
+    color:white;
+    font-size:16px;    
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Choose Your Plan</h1>
+
+    <p>
+        Be the first to know when boardme launches.
+        Early access users will receive an extended free trial.
+    </p>
+
+    <div class="programs">
+
+        <div class="plan">
+            <h2>Free</h2>
+            <div class="price">$0</div>
+
+            <ul>
+                <li>500 Requests</li>
+                <li>Unlimited Projects</li>
+                <li>Extended Free Trial</li>
+            </ul>
+
+            <button class="btn-submit">Create Account</button>
+        </div>
+
+        <div class="plan">
+            <h2>Standard</h2>
+            <div class="price">$99<span style="font-size:20px;">/month</span></div>
+
+            <label>Monthly Active Users</label>
+
+            <select>
+                <option>2500 Requests</option>
+                <option>3000 Requests</option>
+                <option>4000 Requests</option>
+            </select>
+
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>Extended Free Trial</li>
+            </ul>
+
+            <button class="btn-submit">Create Account</button>
+        </div>
+
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <div class="price" style="font-size:35px;">Let's Talk!</div>
+
+            <ul>
+                <li>500 Requests</li>
+                <li>Unlimited Projects</li>
+                <li>Extended Free Trial</li>
+            </ul>
+
+            <button class="btn-submit">Create Account</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
