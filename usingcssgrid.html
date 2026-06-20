@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Template</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e8ebf2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:80%;
+    background:white;
+    padding:50px;
+    border:4px solid navy;
+    border-radius:25px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.search{
+    width:60%;
+    margin:0 auto 40px;
+}
+
+.search input{
+    width:100%;
+    padding:15px;
+    border:1px solid gray;
+    border-radius:8px;
+}
+
+/* GRID */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.card{
+    padding:25px;
+    border-radius:10px;
+}
+
+.card1{
+    background:#dfe2f0;
+}
+
+.card2{
+    background:#ead8eb;
+}
+
+.card3{
+    background:#f2dddd;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:20px;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+/* Bottom Section Grid */
+.bottom{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+a{
+    color:blue;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Search for statistics</h2>
+
+    <div class="search">
+        <input type="text" placeholder="Enter any keyword">
+    </div>
+
+    <div class="cards">
+        <div class="card card1">
+            <h3>Price calculator</h3>
+            <p>How much does 1 Eur in 1963 equal in today's prices?</p>
+            <button>Calculate →</button>
+        </div>
+
+        <div class="card card2">
+            <h3>Name statistics</h3>
+            <p>Search names and statistics data.</p>
+            <button>Search →</button>
+        </div>
+
+        <div class="card card3">
+            <h3>Stats table</h3>
+            <p>Find detailed tables and create your own.</p>
+            <button>Go →</button>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div>
+            <h3>Calendar</h3>
+            <p>See the advance release calendar.</p>
+            <a href="#">Go to Calendar</a>
+        </div>
+
+        <div>
+            <h3>Subscribe to News</h3>
+            <p>Get statistics releases by email.</p>
+            <a href="#">Receive Alerts</a>
+        </div>
+
+        <div>
+            <h3>API</h3>
+            <p>Retrieve and integrate statistics.</p>
+            <a href="#">Open API</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
